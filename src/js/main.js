@@ -9,9 +9,12 @@ let disclaimer = document.querySelector('.disclaimer a');
 disclaimer.innerHTML = parkData.fullName;
 disclaimer.href = parkData.url;
 
-// ADJUST AS HTML IS MADE
-// document.querySelector('.hero-banner-title').innerHTML = parkData.name;
 
-// let heroBannerImg =document.querySelector('.hero-banner img')
-// heroBannerImg.src = parkData.images[0].url;
-// heroBannerImg.alt = parkData.images[0].altText;
+document.querySelector('.hero-banner_title').innerHTML = parkData.name;
+
+document.querySelector('.hero-banner_subtitle span:nth-of-type(1)').innerHTML = parkData.designation;
+document.querySelector('.hero-banner_subtitle span:nth-of-type(2)').innerHTML = parkData.states;
+
+let heroBannerImg =document.querySelector('.hero-banner img')
+heroBannerImg.src = parkData.images[0].url;
+heroBannerImg.alt = parkData.images[0].altText;
