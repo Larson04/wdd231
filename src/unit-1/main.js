@@ -8,7 +8,7 @@ function setCookieInfo(data){
     const container = document.querySelector(".recipe-container");
 
     // .map is used to loop through multiple items in an array
-    const html = data.recipes.map(recipeTemplate);
+    const html = data.map(recipeTemplate);
 
     container.innerHTML = html.join("");
 }
@@ -22,6 +22,12 @@ function recipeTemplate(info){
         <img src="${info.image}" alt="${info.notes}"/>
     </div>
     `
+}
+
+function getDataType(data){
+    const tradContainer = document.querySelector(".trad");
+    const trad = data.find(recipe => recipe.type === "traditional");
+    tradContainer.innerHTML = trad.recipe_name;
 }
 
 setCookieInfo(cookieData);
