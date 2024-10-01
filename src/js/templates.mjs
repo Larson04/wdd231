@@ -1,3 +1,10 @@
+function introTemplate(info) {
+    return `
+    <div class="intro">
+      <h1>${info.fullName}</h1>
+      <p>${info.description}</p>
+    </div>`;
+}
 function mediaCardTemplate(info) {
     return `
     <div class="media-card">
@@ -8,6 +15,7 @@ function mediaCardTemplate(info) {
         <p>${info.description}</p>
      </div>`;
 }
+
 
 function getVoicePhone(numbers) {
   const voice = numbers.find((number) => number.type === "Voice");
@@ -26,4 +34,4 @@ function footerTemplate(info) {
 }
 
 
-export { mediaCardTemplate, footerTemplate };
+export {introTemplate, mediaCardTemplate, footerTemplate };
