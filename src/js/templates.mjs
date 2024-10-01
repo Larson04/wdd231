@@ -9,6 +9,10 @@ function mediaCardTemplate(info) {
      </div>`;
 }
 
+function getVoicePhone(numbers) {
+  const voice = numbers.find((number) => number.type === "Voice");
+  return voice.phoneNumber;
+}
 function footerTemplate(info) {
     const voice = getVoicePhone(info.contacts.phoneNumbers);
   
@@ -20,5 +24,6 @@ function footerTemplate(info) {
   </section>
   <img src="images/topo_pattern.png" alt="pattern" class="pattern">`;
 }
+
 
 export { mediaCardTemplate, footerTemplate };

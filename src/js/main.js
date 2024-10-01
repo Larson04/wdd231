@@ -14,10 +14,5 @@ function createMediaCard(data){
 }
 
 
-function getVoicePhone(numbers) {
-    const voice = numbers.find((number) => number.type === "Voice");
-    return voice.phoneNumber;
-}
-
-setHeaderFooter(parkData);
 createMediaCard(parkInfo);
+setHeaderFooter(parkData);

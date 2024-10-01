@@ -1,3 +1,5 @@
+import { footerTemplate } from "./templates.mjs";
+
 function setHeaderInfo(data){
     // disclaimer park name and link
     document.querySelector('title').innerHTML = data.fullName;
