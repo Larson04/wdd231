@@ -7,9 +7,10 @@ const parkInfo = getParkInfoLinks();
 
 
 function introText(data){
+    console.log(data);
     const intro = document.querySelector('.intro');
-    const html = data(introTemplate);
-    intro.innerHTML = html.join('');
+    const html = introTemplate(data);
+    intro.innerHTML = html;
 }
 
 function createMediaCard(data){
