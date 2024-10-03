@@ -4,7 +4,7 @@ const park = {
   fullName: "Yellowstone National Park",
   parkCode: "yell",
   description:
-    "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.",
+  "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.",
   latitude: "44.59824417",
   longitude: "-110.5471695",
   latLong: "lat:44.59824417, long:-110.5471695",
@@ -33,29 +33,29 @@ const park = {
     emailAddresses: [
       {
         description:
-          "Contact Yellowstone's park rangers for general park questions, lost and found, or for special use permits.",
+        "Contact Yellowstone's park rangers for general park questions, lost and found, or for special use permits.",
         emailAddress: "YELL_Information@nps.gov"
       }
     ]
   },
   directionsInfo:
-    "Yellowstone National Park covers nearly 3,500 square miles in the northwest corner of Wyoming (3% of the park is in Montana and 1% is in Idaho). Yellowstone has five entrance stations, and several are closed to regular vehicles during winter. It takes many hours to drive between these entrances, so be sure to check the status of roads at the entrance you intend to use while planning your trip and before you arrive.",
+  "Yellowstone National Park covers nearly 3,500 square miles in the northwest corner of Wyoming (3% of the park is in Montana and 1% is in Idaho). Yellowstone has five entrance stations, and several are closed to regular vehicles during winter. It takes many hours to drive between these entrances, so be sure to check the status of roads at the entrance you intend to use while planning your trip and before you arrive.",
   directionsUrl: "http://www.nps.gov/yell/planyourvisit/directions.htm",
   images: [
     {
       credit: "NPS/Jim Peaco",
       title: "Grand Prismatic Spring",
       altText:
-        "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.",
+      "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.",
       caption:
-        "The bright colors found in Grand Prismatic Spring come from thermophiles—microorganisms that thrive in hot temperatures",
+      "The bright colors found in Grand Prismatic Spring come from thermophiles—microorganisms that thrive in hot temperatures",
       url: "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg"
     },
     {
       credit: "NPS/Jim Peaco",
       title: "Aurum Geyser",
       altText:
-        "A crowd of people standing along a wooden boardwalk watches a geyser erupt.",
+      "A crowd of people standing along a wooden boardwalk watches a geyser erupt.",
       caption: "Aurum Geyser erupting",
       url: "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg"
     },
@@ -85,7 +85,7 @@ const park = {
       title: "Fishing Bridge Trailside Museum",
       altText: "Visitors walk into a rustic, log and stone building.",
       caption:
-        "The stone-and-log architecture of Fishing Bridge Trailside Museum became a prototype for park buildings all around the country",
+      "The stone-and-log architecture of Fishing Bridge Trailside Museum became a prototype for park buildings all around the country",
       url: "https://www.nps.gov/common/uploads/structured_data/3C7D573E-1DD8-B71B-0B5C0DF5BB91D043.jpg"
     },
     {
@@ -99,7 +99,7 @@ const park = {
       credit: "NPS/Jim Peaco",
       title: "Old Faithful Geyser in winter",
       altText:
-        "A crowd in front of an erupting geyser during a snowy winter day.",
+      "A crowd in front of an erupting geyser during a snowy winter day.",
       caption: "Winter is a magical time to watch Old Faithful Geyser erupt",
       url: "https://www.nps.gov/common/uploads/structured_data/3C7D610A-1DD8-B71B-0BEF676112007818.jpg"
     },
@@ -107,9 +107,9 @@ const park = {
       credit: "NPS/Jim Peaco",
       title: "Palette Spring",
       altText:
-        "Visitors walk in front of a brightly colored, terraced landscape.",
+      "Visitors walk in front of a brightly colored, terraced landscape.",
       caption:
-        "The vibrant colors of Palette Springs are formed by thermophiles—heat-loving organisms",
+      "The vibrant colors of Palette Springs are formed by thermophiles—heat-loving organisms",
       url: "https://www.nps.gov/common/uploads/structured_data/3C7D8903-1DD8-B71B-0BA8669AEEF74379.jpg"
     },
     {
@@ -130,7 +130,7 @@ const park = {
       credit: "NPS/Diane Renkin",
       title: "Bison herd in a thermal area",
       altText:
-        "A herd of bison grazing through a barren and steaming thermal area.",
+      "A herd of bison grazing through a barren and steaming thermal area.",
       caption: "Bison near Mud Volcano",
       url: "https://www.nps.gov/common/uploads/structured_data/8A869F85-FB2E-5EAF-11367EB2DB75963D.jpg"
     },
@@ -150,7 +150,7 @@ const park = {
     }
   ],
   weatherInfo:
-    "Yellowstone's weather can vary quite a bit, even in a single day. In the summer, daytime highs can exceed 70°F (21°C), only to drop 20 or more degrees when a thunderstorm rolls through. It can snow during any month of the year, and winter lows frequently drop below 0°F (-18°C), especially at night. Bring a range of clothing options, including a warm jacket and rain gear, even in the summer.",
+  "Yellowstone's weather can vary quite a bit, even in a single day. In the summer, daytime highs can exceed 70°F (21°C), only to drop 20 or more degrees when a thunderstorm rolls through. It can snow during any month of the year, and winter lows frequently drop below 0°F (-18°C), especially at night. Bring a range of clothing options, including a warm jacket and rain gear, even in the summer.",
   name: "Yellowstone",
   designation: "National Park"
 };
@@ -161,7 +161,7 @@ const parkInfoLinks = [
     link: "conditions.html",
     image: park.images[2].url,
     description:
-      "See what conditions to expect in the park before leaving on your trip!"
+    "See what conditions to expect in the park before leaving on your trip!"
   },
   {
     name: "Fees and Passes &#x203A;",
@@ -180,6 +180,35 @@ const parkInfoLinks = [
 export function getParkInfoLinks() {
   return parkInfoLinks;
 }
-export function getParkData() {
-  return park;
+
+export function getInfoLinks(data) {
+ 
+  const withUpdatedImages = parkInfoLinks.map((item, index) => {
+  item.image = data[index + 2].url;
+  return item;
+});
+return withUpdatedImages;
+}
+
+const baseURL = 'https://developer.nps.gov/api/v1/';
+const apiKey = import.meta.env.VITE_NPS_API_KEY;
+
+async function getJson(url) {
+  const options = {
+    method: "GET",
+    headers: {
+      "X-Api-Key": apiKey
+    }
+  };
+  let data = {};
+  const response = await fetch(baseURL + url, options);
+  if (response.ok) {
+    data = await response.json();
+  } else throw new Error("response not ok");
+  return data;
+}
+
+export async function getParkData() {
+  const parkData = await getJson("parks?parkCode=glac");
+  return parkData.data[0];
 }
