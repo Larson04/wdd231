@@ -8,7 +8,9 @@ export default defineConfig({
     outDir: "../dist",
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html")
+        main: resolve(__dirname, "src/index.html"),
+        condition: resolve(__dirname, "src/conditions.html")
+
       }
     }
   }
