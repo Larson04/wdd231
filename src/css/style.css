@@ -277,7 +277,7 @@ a:hover {
 }
 
 svg {
-  background-color: var(--bs-black);
+  background: none;
   fill: white;
 }
 
@@ -314,6 +314,85 @@ footer .contact{
   grid-column: 1/2;
   z-index: 1;
   padding-left: 1em;
+}
+
+/* Conditions page */
+
+details{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--bs-grey-3);
+}
+
+/* Alerts */
+
+.alert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.alert {
+  margin: 0.5rem;
+  padding: 0.5rem 0 0.8rem 0;
+  display: flex;
+  gap: 1em;
+  border-bottom: 1px solid var(--bs-grey-3);
+}
+
+.alerts h2{
+  padding-left: 0.5rem;
+}
+.alert h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert svg {
+  height: 30px;
+  width: 30px;
+  margin: 0.25em;
+  flex: 0 0 auto;
+}
+
+/* Visitor Centers */
+
+.vc-list {
+  list-style: none;
+  margin: 0.5rem;
+  padding: 0.5rem 0 0.8rem 0;
+  gap: 1em;
+  /* border: 1px solid var(--bs-grey-3); */
+}
+
+.vc-list li{
+  border-bottom: 1px solid var(--bs-grey-3);
+  margin: 0.5rem;
+}
+
+.visitor h2{
+  padding-left: 0.5rem;
+}
+.visitor h3 {
+  padding: 0.5rem;
+  font-size: 1.2em;
+}
+
+.visitor p {
+  padding: 0.5rem;
+}
+
+/* Activities */
+.act-list {
+  margin: 0.5rem;
+  /* border: 1px solid var(--bs-grey-3); */
+}
+
+.activities h2{
+  padding-left: 0.5rem;
 }
 
 /* Media Queries */

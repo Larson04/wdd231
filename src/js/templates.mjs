@@ -54,6 +54,23 @@ export function alertTemplate(alert){
     <h3 class="alert-${alertType}">${alert.title}</h3>
     <p>${alert.description}</p>
   </div>
-</li>
+  </li>
+  `
+}
+
+export function visitorCenterTemplate(visitorCenter) {
+  return `
+  <li class="visitor-center">
+    <h3>${visitorCenter.name}</h3>
+    <p>${visitorCenter.description}</p>
+  </li>
+  `
+}
+
+export function activitiesTemplate(activity){
+  return `
+  <li class="activity">
+    <p>${activity.name}</p>
+  </li>
   `
 }
