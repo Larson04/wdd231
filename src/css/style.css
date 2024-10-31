@@ -199,6 +199,58 @@ a:hover {
   border-left: 1px solid var(--bs-grey-5);
 }
 
+.global-header{
+  display: grid;
+  grid-template-columns: 300px auto 150px;
+}
+
+.global-nav {
+  width: 100%;
+  grid-column: 1/4;
+  border-top: 1px solid #333;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.global-nav button{
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.global-nav svg{
+  --icon-color: white;
+}
+
+.global-nav-toggle-closed {
+  display: flex;
+  align-items: center;
+}
+
+.global-nav-toggle-open {
+  display: none;
+  align-items: center;
+}
+
+.global-header_right{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.global-nav_toggle[aria-expanded="true"] .global-nav-toggle-closed {
+  display: none;
+}
+
+.global-nav_toggle[aria-expanded="true"] .global-nav-toggle-open {
+  display: flex;
+}
+
+.global-nav.show{
+  max-height: 1000px;
+}
+
 /* Hero Banner */
 .hero-banner{
   display: grid;
