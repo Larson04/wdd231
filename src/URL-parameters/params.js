@@ -26,5 +26,8 @@ function productTemplate(product){
 function getProductDetails(){
   const productId = getParams("id");
   const product = products.find(product => product.id == productId);
-  return productTemplate(product);
+  const element = document.querySelector(".product");
+  element.insertAdjacentHTML("beforebegin", productTemplate(product));
 }
+
+getProductDetails();
