@@ -210,7 +210,6 @@ a:hover {
   border-top: 1px solid #333;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.5s ease-in-out;
 }
 
 .global-nav button{
@@ -222,6 +221,33 @@ a:hover {
 
 .global-nav svg{
   --icon-color: white;
+}
+
+.global-nav_section-heading{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 0.625rem;
+  font-size: 1.25rem;
+}
+
+.section-heading-green{
+  color: var(--bs-light-green);
+}
+
+.section-heading-blue{
+  color: var(--bs-chathams-blue-3);
+}
+
+.global-nav_list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #444;
+}
+
+.global-nav_split-button{
+  display: flex;
+  background-color: var(--bs-gray-800);
 }
 
 .global-nav-toggle-closed {
