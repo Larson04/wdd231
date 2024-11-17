@@ -1,4 +1,5 @@
 import { footerTemplate } from "./templates.mjs";
+import enableNavigation from "./navigation.mjs";
 
 function setHeaderInfo(data){
     // disclaimer park name and link
@@ -28,6 +29,7 @@ function setFooterInfo(data){
 function setHeaderFooter(data){
     setHeaderInfo(data);
     setFooterInfo(data);
+    enableNavigation();
 }
 
 export { setHeaderFooter };
