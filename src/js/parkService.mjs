@@ -209,7 +209,7 @@ async function getJson(url) {
 }
 
 export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=glac");
+  const parkData = await getJson("parks?parkCode=yell");
   return parkData.data[0];
 }
 
@@ -221,4 +221,9 @@ export async function getAlerts(parkCode){
 export async function getVisitorCenterData(parkCode){
   const visitorCenterData = await getJson(`visitorcenters?parkCode=${parkCode}`);
   return visitorCenterData.data;
+}
+
+export async function getParkVisitorCenterDetails(id){
+  const visitorCenterData = await getJson(`visitorcenters?id=${id}`);
+  return visitorCenterData.data[0];
 }

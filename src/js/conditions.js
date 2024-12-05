@@ -25,7 +25,7 @@ function setActivities(activities){
     activityContainer.innerHTML = html.join('')
 }
 
-async function init() {
+async function innit() {
     const parkData = await getParkData();
     console.log(parkData);
     const alerts = await getAlerts(parkData.parkCode);
@@ -38,4 +38,4 @@ async function init() {
     setActivities(parkData.activities);
 } 
 
-init();
+innit();

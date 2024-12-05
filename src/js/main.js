@@ -6,7 +6,7 @@ import {introTemplate, mediaCardTemplate, footerTemplate} from "./templates.mjs"
 const parkInfo = getParkInfoLinks();
 
 
-async function init() {
+async function innit() {
     const parkData = await getParkData();
     const links = getInfoLinks(parkData.images);
     createMediaCard(links);
@@ -30,4 +30,4 @@ function createMediaCard(data){
 
 
 
-init();
+innit();

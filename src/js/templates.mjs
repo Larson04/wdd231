@@ -61,8 +61,9 @@ export function alertTemplate(alert){
 export function visitorCenterTemplate(visitorCenter) {
   return `
   <li class="visitor-center">
-    <h3>${visitorCenter.name}</h3>
+    <h3><a href="visitor.html?id=${visitorCenter.id}}">${visitorCenter.name}</a></h3>
     <p>${visitorCenter.description}</p>
+    <p>${visitorCenter.directionsInfo}</p>
   </li>
   `
 }
@@ -72,5 +73,11 @@ export function activitiesTemplate(activity){
   <li class="activity">
     <p>${activity.name}</p>
   </li>
+  `
+}
+
+export function centerNameTemplate(data){
+  return `
+  <h2>${data.name}</h2>
   `
 }
