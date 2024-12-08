@@ -198,7 +198,9 @@
                 </svg>
                 Directions
                 </summary>
-                <p>[directions]</p>
+                <section class="vc-directions">
+                  <p>[directions]</p>
+                </section>
                 <!-- remove later -->
             </details>
             <details name="vc-details" id="vcAmenities">
@@ -211,7 +213,7 @@
                 </svg>
                 Amenities
                 </summary>
-                <ul> <!-- Remove later -->
+                <ul class="vc-amenities"> <!-- Remove later -->
                 <li>All</li>
                 <li>the</li>
                 <li>amenities</li>
@@ -229,13 +231,15 @@
                 Contact Information
                 </summary>
                 <!-- Remove later -->
-                <section class="vc-contact__email">
-                <h3>Email Address</h3>
-                <a href="email:">Send this visitor center an email</a>
-                </section>
-                <section class="vc-contact__phone">
-                <h3>Phone numbers</h3>
-                <a href="tel:+12083591111">[phone]</a>
+                <section class="vc-contacts">
+                  <section class="vc-contact_email">
+                  <h3>Email Address</h3>
+                  <a href="email:">Send this visitor center an email</a>
+                  </section>
+                  <section class="vc-contact_phone">
+                  <h3>Phone numbers</h3>
+                  <a href="tel:+12083591111">[phone]</a>
+                  </section>
                 </section>
             </details>
         </section>
@@ -249,13 +253,13 @@
                 </svg>
                 Image Gallery
             </h2>
-            <ul> <!-- Remove later -->
-                <li><img src="" alt="" /></li>
+            <ul class="vc-images"> <!-- Remove later -->
+              <li><img src="" alt="" /></li>
             </ul>
         </section>
     </main>
     <footer id="park-footer">
     </footer>
-    <script type="module" src="js/visitor.mjs"></script>
+    <script type="module" src="js/visitor.js"></script>
   </body>
 </html>
