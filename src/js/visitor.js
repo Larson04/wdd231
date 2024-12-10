@@ -34,8 +34,9 @@ function setInfo(data){
 }
 
 function setAddresses(data){
+    console.log(data);
     const addresses = document.querySelector('.vc-addresses');
-    const html = vcAddressesListTemplate(data);
+    const html = vcAddressesListTemplate(data.addresses);
     addresses.innerHTML = html;
 }
 

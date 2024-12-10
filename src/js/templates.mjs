@@ -104,6 +104,7 @@ function vcAddressTemplate(data) {
 }
 
 export function vcAddressesListTemplate(data) {
+  console.log(data.addresses);
   const physical = data.find((address) => address.type === "Physical");
   const mailing = data.find((address) => address.type === "Mailing");
   let html = vcAddressTemplate(physical);
